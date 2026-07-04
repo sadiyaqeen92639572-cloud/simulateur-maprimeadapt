@@ -4,6 +4,14 @@
 
 # 🎯 Simulateur MaPrimeAdapt - Architecture Centralisée Multi-Sites
 
+## 🔧 Outil Gratuit
+
+**[Calculateur Éligibilité MaPrimeAdapt 2026](https://sadiyaqeen92639572-cloud.github.io/aide-maprimeadapt-calcul/)** — entrez vos revenus fiscaux et le montant des travaux → taux d'aide (50% ou 70%), montant estimé, plafonds ANAH 2026. Résultat immédiat, sans inscription.
+
+Pour une simulation complète avec aides cumulables (caisse retraite, Action Logement, département) : **[simulateur-maprimeadapt.fr](https://simulateur-maprimeadapt.fr/)**
+
+---
+
 Application React complète avec **Lead Scoring** et **API centralisée** pour gérer les leads de plusieurs sites (niches).
 
 ## ✨ Nouveau : Architecture Centralisée Implémentée
