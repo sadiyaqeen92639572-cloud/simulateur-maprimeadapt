@@ -1,0 +1,51 @@
+# robots.txt pour Simulateur MaPrimeAdapt - Douche PMR 2026
+# Permet aux crawlers d'indexer le contenu tout en protégeant les routes API
+
+# Autoriser tous les crawlers
+User-agent: *
+Allow: /
+
+# Interdire l'accès à l'API et aux routes sensibles
+Disallow: /api/
+Disallow: /api/v1/
+Disallow: /admin/
+
+# Interdire les fichiers de configuration et de build
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /.env*
+
+# Autoriser les ressources statiques (CSS, JS, images)
+Allow: /src/
+Allow: /public/
+Allow: /assets/
+
+# Localisation du sitemap
+Sitemap: https://simulateur-maprimeadapt.fr/sitemap.xml
+
+# Délai de crawl (optionnel - pour éviter la surcharge)
+Crawl-delay: 1
+
+# règles spécifiques pour certains crawlers
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# OpenAI/GPT (pour GEO)
+User-agent: GPTBot
+Allow: /
+
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (utilisé par Perplexity et autres)
+User-agent: CCBot
+Allow: /
