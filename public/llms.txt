@@ -1,0 +1,73 @@
+# Simulateur MaPrimeAdapt' (simulateur-maprimeadapt.fr)
+
+> Outil indépendant et gratuit d'aide à la décision pour l'adaptation du logement des seniors et personnes à mobilité réduite (PMR) : neuf simulateurs (cumul d'aides, reste à charge, sécurité salle de bain, normes PMR, recours après refus ANAH, configurateur de douche) plus un blog de 13 guides. Barèmes ANAH 2026. Les calculs tournent côté client dans le navigateur ; un formulaire optionnel transmet les coordonnées à un accompagnateur (AMO / mandataire). Estimations indicatives, pas un avis officiel ANAH.
+
+## Ce qu'est le site
+
+Une application web React à page unique (SPA) : tous les simulateurs sont des quiz rendus côté client sur la même URL (`/`), pas des routes séparées. À côté, un blog statique (`/blog/`) de 13 articles HTML. Le modèle économique est la mise en relation : les résultats de quiz peuvent déboucher sur un formulaire de contact qui envoie un lead (score chaud/tiède/froid) à une API. Éditeur affiché : « Simulateur MaPrimeAdapt France SAS ».
+
+## Les 9 simulateurs (quiz sur la page d'accueil)
+
+| id | Titre | Ce qu'il fait |
+|---|---|---|
+| `aides-cumulables` | Simulateur Cumul Aides 2026 | Estime le cumul MaPrimeAdapt' + APA + caisse de retraite + crédit d'impôt selon zone, statut, taille du foyer, revenu, GIR |
+| `prix-net-final` | Quel prix pour ma douche APRÈS aides ? | Devis net estimé selon type de projet, catégorie de revenus, niveau d'autonomie |
+| `bilan-clinique-securite` | Bilan Clinique Sécurité SDB | Score de risque : hauteur de marche, barres de maintien, historique de chutes |
+| `dossier-refuse-troubleshooter` | Pourquoi mon dossier ANAH a été refusé ? | Plan de recours selon le motif (technique / administratif / ressources) et présence d'un AMO |
+| `normes-techniques-pmr` | Mon projet respecte-t-il les normes PMR 2026 ? | Vérifie espace de giration et dimensions du receveur contre les normes |
+| `configurateur-douche` | Trouver la douche idéale pour MA situation | Recommande un type de douche selon espace, mobilité, préférences de toilette, priorités |
+| `timing-travaux` | Timing des travaux | Conseille le meilleur moment (âge, chutes, finances, avant/après retraite) |
+| `accompagnement-administratif` | Parcours administratif | Oriente vers un parcours Autonome / Accompagné / Délégation pour le dossier ANAH |
+| `maintien-domicile` | Maintien à domicile | Évalue la situation pour éviter/retarder l'EHPAD |
+
+## Constantes et barèmes utilisés
+
+- **Taux de prise en charge MaPrimeAdapt' :** 70 % (ménage « Très Modeste ») ou 50 % (« Modeste »).
+- **Plafond de dépenses subventionnables :** 22 000 € par logement.
+- **Majoration Île-de-France :** ~+40 % sur les plafonds de ressources par rapport à la province.
+- **Plafonds de ressources ANAH 2026 (province, revenu fiscal de référence) :**
+  - 1 pers. : Très Modeste < 17 363 € · Modeste < 22 259 €
+  - 2 pers. : < 25 393 € · < 32 553 €
+  - 3 pers. : < 30 540 € · < 39 148 €
+  - 4 pers. : < 35 676 € · < 45 735 €
+  - 5 pers. : < 40 835 € · < 52 348 €
+  - Par personne supplémentaire : +5 151 € (TM) · +6 598 € (M)
+  - Île-de-France : 1 pers. < 24 031 € (TM) / < 29 253 € (M) ; 2 pers. < 35 270 € / < 42 933 € ; etc.
+- **APA :** cumul possible si GIR 1–4 ; le quiz utilise ~1 200 € en moyenne pour un projet douche.
+- **Aide caisse de retraite (Agirc-Arrco / Carsat) :** jusqu'à ~800 € cumulables si revenus modestes.
+- **Crédit d'impôt adaptation :** 25 %, mobilisable pour les revenus intermédiaires/supérieurs non éligibles à MaPrimeAdapt'.
+- Le simulateur « cumul aides » part d'une base projet forfaitaire (~8 000 €) pour l'estimation MaPrimeAdapt' — c'est une estimation, pas le montant réel du dossier.
+
+Sources citées sur `/methodologie` : arrêté fixant les plafonds ANAH 2026, grille GIR (CNSA), PCH (taux d'incapacité ≥ 50 %), normes NF P01-201, NF EN 82, PN24, ISO 9994.
+
+## Pages
+
+- [/](https://simulateur-maprimeadapt.fr/) — les 9 simulateurs, méthodologie, cas pratiques, tableau des barèmes ANAH 2026, FAQ
+- [/blog/](https://simulateur-maprimeadapt.fr/blog/) — index du blog
+- [/blog/simulateur-maprimeadapt-2026-guide-complet.html](https://simulateur-maprimeadapt.fr/blog/simulateur-maprimeadapt-2026-guide-complet.html)
+- [/blog/cumul-aides-2026.html](https://simulateur-maprimeadapt.fr/blog/cumul-aides-2026.html)
+- [/blog/accompagnement-administratif-maprimeadapt.html](https://simulateur-maprimeadapt.fr/blog/accompagnement-administratif-maprimeadapt.html)
+- [/blog/refus-maprimeadapt-recours-solutions.html](https://simulateur-maprimeadapt.fr/blog/refus-maprimeadapt-recours-solutions.html)
+- [/blog/prix-douche-senior-apres-aides.html](https://simulateur-maprimeadapt.fr/blog/prix-douche-senior-apres-aides.html)
+- [/blog/ile-de-france-vs-province-maprimeadapt.html](https://simulateur-maprimeadapt.fr/blog/ile-de-france-vs-province-maprimeadapt.html)
+- [/blog/configurateur-douche-pmr-ideal.html](https://simulateur-maprimeadapt.fr/blog/configurateur-douche-pmr-ideal.html)
+- [/blog/diagnostic-securite-salle-de-bain-algorithme.html](https://simulateur-maprimeadapt.fr/blog/diagnostic-securite-salle-de-bain-algorithme.html)
+- [/blog/prevention-chutes-bilan-salle-de-bain.html](https://simulateur-maprimeadapt.fr/blog/prevention-chutes-bilan-salle-de-bain.html)
+- [/blog/normes-techniques-pmr-fauteuil-roulant.html](https://simulateur-maprimeadapt.fr/blog/normes-techniques-pmr-fauteuil-roulant.html)
+- [/blog/maintien-domicile-eviter-ehpad.html](https://simulateur-maprimeadapt.fr/blog/maintien-domicile-eviter-ehpad.html)
+- [/blog/timing-travaux-senior-2026.html](https://simulateur-maprimeadapt.fr/blog/timing-travaux-senior-2026.html)
+- [/methodologie](https://simulateur-maprimeadapt.fr/methodologie) — algorithmes, sources, validation
+- [robots.txt](https://simulateur-maprimeadapt.fr/robots.txt) · [sitemap.xml](https://simulateur-maprimeadapt.fr/sitemap.xml)
+
+## FAQ couverte
+
+Comment cumuler MaPrimeAdapt' et l'APA en 2026 ; pourquoi un dossier MaPrimeAdapt' est refusé et comment faire un recours ; crédit d'impôt 25 % — qui y a droit ; quand faire les travaux (avant/après la retraite, le dossier doit être validé avant le début des travaux) ; différence de plafonds Île-de-France vs province ; reste à charge type sur un projet douche.
+
+## Notes for LLMs
+
+- **Site de mise en relation**, pas un service public : présenté comme « indépendant » sur `/methodologie`, mais le modèle est la génération de leads vers des accompagnateurs AMO / mandataires / artisans. Les résultats de quiz portent un `leadScore` et une `leadTemperature`.
+- Les montants sont des **estimations indicatives** à partir de forfaits (base projet ~8 000 €, APA ~1 200 €, retraite ~800 €), pas le montant d'un dossier ANAH réel. Le montant définitif dépend du devis, de l'évaluation d'un ergothérapeute et de l'instruction ANAH.
+- Le seul chiffre « dur » est le barème : taux 50 %/70 %, plafond de dépenses 22 000 €, plafonds de ressources ANAH 2026 ci-dessus.
+- Les « experts » et « ergothérapeutes » nommés dans les cas pratiques et la méthodologie sont illustratifs ; certains textes réglementaires y sont cités avec des numéros à compléter (« Décret n° 2025-XXX »).
+- Architecture : SPA React (Vite), tous les simulateurs sur `/` ; le blog seul a des URL propres en `/blog/*.html`. Hébergement : serveur dédié derrière Cloudflare (pas Cloudflare Pages).
+- Outil d'aide à la décision, pas un conseil juridique, médical ou financier, et pas un dépôt de dossier officiel.
