@@ -147,6 +147,14 @@ aide maximale 11 000 € ou 15 400 €), complétée par la **TVA à 5,5 %** sur
 handicapées), et les aides des caisses de retraite et des collectivités. Le
 crédit d'impôt de 25 % est **supprimé depuis le 1er janvier 2026**.
 
+### Quelle aide à l'aménagement du logement pour une personne âgée ?
+Pour une salle de bain, l'aide principale reste **MaPrimeAdapt'** (50 % ou 70 %
+du montant HT, plafond 22 000 €). Pour le reste du logement, d'autres aides à
+l'aménagement du logement des personnes âgées existent selon la situation :
+**APA** (perte d'autonomie, GIR 1 à 4), **PCH** (handicap), aides des caisses
+de retraite et des collectivités locales — voir le détail dans notre guide
+[conditions, ressources et démarches](/blog/conditions-ressources-maprimeadapt.html).
+
 ### Peut-on aménager une salle de bain PMR en location ?
 Oui : un locataire peut demander MaPrimeAdapt' avec l'**accord écrit du
 propriétaire**. Le propriétaire bailleur peut également être le demandeur, sous

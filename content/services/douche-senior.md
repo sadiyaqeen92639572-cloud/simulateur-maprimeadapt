@@ -191,6 +191,14 @@ barres d'appui) sans contrainte de dimensions. Une **douche PMR** respecte en pl
 les normes d'accessibilité (NF P99-611, dimensions et aire de rotation) pour un
 usage en fauteuil roulant. MaPrimeAdapt' finance les deux selon la situation.
 
+### Quelle aide salle de bain senior propose l'Anah ?
+L'Anah finance l'aide salle de bain senior via **MaPrimeAdapt'** : 50 % ou 70 %
+du montant HT des travaux, dans la limite de 22 000 € (aide maximale 11 000 €
+ou 15 400 €). C'est l'aide Anah salle de bain senior la plus significative ;
+elle se cumule avec la TVA réduite à 5,5 %, la PCH et les aides des caisses de
+retraite. Voir le détail des conditions dans notre guide
+[conditions, ressources et démarches](/blog/conditions-ressources-maprimeadapt.html).
+
 ### Peut-on bénéficier des aides en tant que locataire ?
 Oui. Un locataire peut demander MaPrimeAdapt' avec l'**accord écrit du
 propriétaire**. Le propriétaire bailleur peut aussi être le demandeur, avec un
