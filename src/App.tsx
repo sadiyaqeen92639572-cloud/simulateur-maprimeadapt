@@ -697,8 +697,8 @@ export default function App() {
                   {/* Article 1 */}
                   <a href="/blog/conditions-ressources-maprimeadapt.html" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div className="text-2xl mb-3">1️⃣</div>
-                    <h3 className="text-xl font-bold text-stone-900 mb-2">Simulateur MaPrimeAdapt' 2026</h3>
-                    <p className="text-stone-600 text-sm mb-4">Guide complet pour calculer vos aides financières avec les barèmes ANAH 2026. Exemples concrets et reste à charge détaillé.</p>
+                    <h3 className="text-xl font-bold text-stone-900 mb-2">MaPrimeAdapt' : conditions, ressources et démarches 2026</h3>
+                    <p className="text-stone-600 text-sm mb-4">Conditions d'éligibilité, plafonds de ressources, montants et démarches de MaPrimeAdapt' : ce qu'il faut savoir avant de déposer votre dossier.</p>
                     <div className="text-xs text-stone-500">🏷️ MaPrimeAdapt' • Aides Financières • 2026</div>
                   </a>
 
