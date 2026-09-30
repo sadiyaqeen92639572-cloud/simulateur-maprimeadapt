@@ -27,6 +27,29 @@ Tant que le template n'est pas remis à niveau sur le HTML prod actuel :
    nouveau slug (doit être > 0) sur la home servie, clic réel sur les liens pour confirmer l'absence
    de redirection, purge cache navigateur si besoin.
 
+## `index.html` (home) : prérendu patché à la main, pas régénéré
+
+`dist/index.html` et `/var/www/senior-bain/index.html` (copie racine, à garder synchro) sont le
+rendu Playwright (`scripts/prerender.js`) d'une session antérieure, **patché à la main** depuis
+(changement de hash d'assets JS/CSS après un `vite build`, correction de texte de carte). Le
+prérendu n'a **pas** été relancé.
+
+- Tant que les changements sur la home sont limités (hash d'assets, un titre/texte de carte, un
+  lien), patcher `dist/index.html` à la main (remplacement de chaîne ciblé, borné et vérifié —
+  voir piège script ci-dessous) est plus sûr que de relancer Playwright : ça évite tout effet de
+  bord sur le reste du rendu.
+- Dès que la home change de **structure** (nouvelle section, nouveau composant, changement de
+  layout), il faut relancer `node scripts/prerender.js` sur un build frais, puis diff le résultat
+  contre l'`index.html` actuel pour confirmer que seul le changement voulu apparaît.
+
+## Piège des scripts de patch par slicing Python
+
+Un script qui fait `s.find(marker)` puis découpe la chaîne à cet index peut corrompre tout le
+fichier si le marker ne matche pas (guillemets/apostrophes typographiques, espaces insécables
+`\xa0` fréquents dans le HTML de ce site) : `find()` renvoie `-1`, et la découpe se fait n'importe
+où dans le fichier. Toujours `assert idx != -1` juste après chaque recherche de borne, et vérifier
+`git diff --stat` avant tout déploiement — un fichier qui double de taille se voit immédiatement.
+
 ## Fichiers bloqués côté nginx
 
 `location ~* (\.bak.*|\.md)$ { return 404; }` dans `/etc/nginx/sites-enabled/senior-bain` —
