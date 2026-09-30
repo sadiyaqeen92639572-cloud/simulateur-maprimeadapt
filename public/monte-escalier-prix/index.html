@@ -215,7 +215,7 @@
 <p>Le prix couvre en principe le rail sur mesure, le siège, la pose et la mise en service. L&#39;entretien périodique est un poste à part : demandez son montant sur le devis.</p>
 <h2>Les aides pour financer un monte-escalier</h2>
 <h3>MaPrimeAdapt&#39; (Anah)</h3>
-<p>L&#39;aide finance <strong>70 % du montant des travaux pour un ménage très modeste</strong> et <strong>50 % pour un ménage modeste</strong>, dans la limite de <strong>22 000 € HT</strong> de travaux. Le monte-escalier électrique fait partie des travaux finançables (il n&#39;existe pas de liste fermée). Il faut respecter les conditions liées à la personne, au logement et aux ressources décrites dans notre guide : <a href="/blog/conditions-ressources-maprimeadapt.html">conditions, ressources et démarches</a>. L&#39;accompagnement par un AMO fait partie du parcours : voir <a href="/blog/accompagnement-administratif-maprimeadapt.html">le rôle de l&#39;AMO</a>.</p>
+<p>L&#39;aide finance <strong>70 % du montant des travaux pour un ménage très modeste</strong> et <strong>50 % pour un ménage modeste</strong>, dans la limite de <strong>22 000 € HT</strong> de travaux. Le monte-escalier électrique fait partie des travaux finançables (il n&#39;existe pas de liste fermée). Il faut respecter les conditions liées à la personne, au logement et aux ressources décrites dans notre guide : <a href="/blog/conditions-ressources-maprimeadapt.html">conditions, ressources et démarches</a>. L&#39;accompagnement par un AMO fait partie du parcours : voir <a href="/blog/accompagnement-administratif-maprimeadapt.html">le rôle de l&#39;AMO</a>. Le plafond de 22 000 € HT est un plafond global : si vous ne l&#39;atteignez pas à une première demande, une nouvelle demande reste possible dans les cinq années suivantes, dans la limite du montant restant disponible.</p>
 <h3>Autres aides possibles</h3>
 <ul>
 <li><strong>TVA à 5,5 %</strong> : un taux réduit existe pour certains ascenseurs et matériels assimilés (voir l&#39;encadré ci-dessous). Demandez à l&#39;installateur ce qui figure sur le devis.</li>
@@ -225,9 +225,8 @@
 <blockquote>
 <p><strong>Points à confirmer au 30 septembre 2026</strong> (prochaine revue de cette page : 28 octobre 2026)</p>
 <ul>
-<li><strong>Guichet</strong> : le dépôt des demandes a été suspendu du 1er janvier au 23 février 2026, puis du 3 au 17 août 2026. D&#39;après les informations disponibles, France Rénov&#39; est le point d&#39;entrée unique depuis le 17 août. Vérifiez l&#39;état du guichet sur <a href="https://france-renov.gouv.fr/">france-renov.gouv.fr</a> et ne commencez pas les travaux avant l&#39;accord de l&#39;Anah.</li>
+<li><strong>Guichet</strong> : le parcours passe par un conseiller France Rénov&#39;, puis la création d&#39;un compte France Rénov&#39; pour déposer la demande. Ce qui n&#39;est pas confirmé par une source postérieure au 17 août 2026, c&#39;est l&#39;état d&#39;ouverture du guichet aujourd&#39;hui (le dépôt a déjà été suspendu deux fois en 2026). Vérifiez sur <a href="https://france-renov.gouv.fr/">france-renov.gouv.fr</a> avant de commencer les travaux.</li>
 <li><strong>Frais d&#39;accompagnement</strong> : leur prise en compte dans le plafond de 22 000 € HT n&#39;est pas confirmée. Le simulateur ci-dessous ne les inclut pas.</li>
-<li><strong>Plusieurs aides Anah en 5 ans</strong> : deux demandes d&#39;adaptation successives ne rouvrent pas nécessairement un nouveau plafond. Demandez conseil à votre accompagnateur.</li>
 <li><strong>TVA à 5,5 %</strong> : le taux réduit (article 278-0 bis A du CGI, pose et entretien compris) dépend des <strong>caractéristiques techniques de l&#39;appareil</strong> fixées par arrêté (article 30-0 C, annexe IV du CGI) — pas du statut handicapé ou de l&#39;âge de la personne qui l&#39;utilise. Demandez à l&#39;installateur si le modèle proposé répond à ces caractéristiques.</li>
 </ul>
 </blockquote>
@@ -272,7 +271,7 @@
     if(!(amount>0)){out.innerHTML='<p><strong>Saisissez le montant HT de votre devis.</strong></p>';return;}
     if(rate===0){out.innerHTML='<p>Au-dessus des plafonds de ressources, MaPrimeAdapt’ ne s’applique pas. Le reste à charge est égal au devis : <strong>'+eur(amount)+' HT</strong>. D’autres aides (aides locales, PCH) peuvent exister.</p>';return;}
     var base=Math.min(amount,22000), aid=base*rate, rest=amount-aid, html='';
-    if(pr.checked){html+='<p style="color:#b45309;"><strong>Attention :</strong> deux demandes d’adaptation successives ne rouvrent pas nécessairement un nouveau plafond de 22 000 € HT. Demandez conseil à votre accompagnateur : le montant ci-dessous peut être inférieur.</p>';}
+    if(pr.checked){html+='<p style="color:#b45309;"><strong>Attention :</strong> le plafond de 22 000 € HT est partagé entre vos demandes sur 5 ans, pas renouvelé à chaque fois. Le montant ci-dessous suppose un plafond disponible en entier : demandez à votre accompagnateur ce qu&#39;il reste réellement.</p>';}
     html+='<p>Aide estimée : <strong>'+eur(aid)+'</strong><br>Reste à charge estimé : <strong>'+eur(rest)+' HT</strong></p>';
     if(amount>22000){html+='<p>Votre devis dépasse le plafond de 22 000 € HT : la part au-dessus reste entièrement à votre charge.</p>';}
     out.innerHTML=html;
