@@ -19,7 +19,7 @@ Si vous estimez que le refus est injuste, suivez notre méthode pour débloquer 
 3.  **Contacter l'AMO** : C'est sa mission de défendre votre dossier. S'il n'arrive pas à justifier le projet, il est peut-être temps de changer d'AMO.
 4.  **Le Recours Gracieux** : Vous avez 2 mois pour écrire à l'Anah en apportant des éléments nouveaux (photo, justificatif de santé).
 5.  **Le Recours Hiérarchique** : Si le recours gracieux échoue, vous pouvez solliciter le ministère du Logement.
-6.  **Basculement vers d'autres aides** : Si le blocage MaPrimeAdapt' est définitif (ex: ressources trop hautes), tournez-vous immédiatement vers le **crédit d'impôt accessibilité** ou les aides des caisses de retraite.
+6.  **Basculement vers d'autres aides** : Si le blocage MaPrimeAdapt' est définitif (ex: ressources trop hautes), tournez-vous vers la **PCH** (si handicap), les **aides des caisses de retraite** (CARSAT/MSA) et des collectivités. Le crédit d'impôt de 25% n'est plus mobilisable pour les dépenses payées depuis le 1er janvier 2026.
 7.  **Saisir le Médiateur** : En dernier recours, le médiateur de l'Anah peut arbitrer les dossiers complexes.
 
 ## Comment éviter le refus dès le départ ?

@@ -39,7 +39,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'aides-cumulables',
     title: "Simulateur Cumul Aides 2026",
-    description: "Calculez le cumul réel (MaPrimeAdapt' + APA + Caisse de Retraite + Crédit d'impôt) pour minimiser votre reste à charge.",
+    description: "Calculez le cumul réel (MaPrimeAdapt' + APA + Caisse de Retraite + PCH) pour minimiser votre reste à charge.",
     icon: Calculator,
     color: 'bg-blue-500',
     questions: [
@@ -100,7 +100,7 @@ export const quizzes: Quiz[] = [
       const details = [];
       const isModeste = answers.revenu === 'modeste' || answers.revenu === 'tres_modeste';
 
-      if (isModeste && answers.status === 'proprio') {
+      if (isModeste && (answers.status === 'proprio' || answers.status === 'locataire')) {
         const taux = answers.revenu === 'tres_modeste' ? 0.7 : 0.5;
         const base = 8000;
         const mpa = base * taux;
@@ -121,9 +121,7 @@ export const quizzes: Quiz[] = [
       }
 
       if (answers.revenu === 'autre') {
-        const ci = 5000 * 0.25;
-        aides_totales += ci;
-        details.push(`✅ Crédit d'impôt (25%) : Mobilisable si non éligible à MaPrimeAdapt'.`);
+        details.push(`ℹ️ Revenus intermédiaires/supérieurs : non éligible à MaPrimeAdapt'. Le crédit d'impôt de 25% pour l'adaptation du logement est supprimé depuis le 1er janvier 2026. Restent mobilisables : PCH (si handicap), aides de caisse de retraite et des collectivités.`);
       }
 
       details.push(`👉 Total des aides cumulées : environ ${Math.round(aides_totales)}€.`);
@@ -286,7 +284,7 @@ export const quizzes: Quiz[] = [
     calculateResult: (answers) => {
       const details = [];
       if (answers.refus_cause === 'incomplet') details.push("📍 Action : Vérifiez la liste des pièces. Souvent, c'est l'attestation de l'AMO ou le devis RGE qui pose problème.");
-      else if (answers.refus_cause === 'age_logement') details.push("📍 Verdict : MaPrimeAdapt' exige un logement de plus de 15 ans. Utilisez le Crédit d'Impôt à 25% à la place.");
+      else if (answers.refus_cause === 'age_logement') details.push("📍 Verdict : MaPrimeAdapt' exige un logement achevé depuis plus de 15 ans à la date de la demande. Le crédit d'impôt de 25% n'existe plus depuis 2026 ; orientez-vous vers la PCH (si handicap), les aides de caisse de retraite ou des collectivités.");
       if (answers.amo_presence === 'non') details.push("💡 Important : L'accompagnement AMO est OBLIGATOIRE. Son absence cause 40% des refus.");
       details.push("👉 Solution : Nous pouvons mandater un expert pour auditer votre dossier et lancer un recours gracieux.");
       return {

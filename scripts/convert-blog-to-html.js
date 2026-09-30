@@ -120,7 +120,7 @@ function getAuthorBio(slug) {
 function getCTAForSlug(slug) {
   const mapping = {
     // 1. Guides Principaux
-    'simulateur-maprimeadapt-2026-guide-complet': { id: 'aides-cumulables', text: 'Estimer mes aides 2026' },
+    'conditions-ressources-maprimeadapt': { id: 'aides-cumulables', text: 'Estimer mes aides 2026' },
     'diagnostic-securite-salle-de-bain-algorithme': { id: 'bilan-clinique-securite', text: 'Faire mon diagnostic sécurité' },
     'configurateur-douche-pmr-ideal': { id: 'configurateur-douche', text: 'Configurer ma douche' },
 

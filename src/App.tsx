@@ -228,10 +228,14 @@ export default function App() {
                         Le Super Simulateur d'aides financières agrège l'ensemble des dispositifs mobilisables en 2026. L'algorithme calcule en priorité l'éligibilité à <strong>MaPrimeAdapt'</strong>.
                       </p>
                       <div className="bg-white p-3 rounded-lg border border-blue-100 text-xs font-mono text-stone-700 space-y-2">
-                        <p className="font-semibold text-blue-800">Formule de calcul (Plafonds &gt;5 pers) :</p>
+                        <p className="font-semibold text-blue-800">Aide MaPrimeAdapt' :</p>
+                        <code>Aide_MPA = MIN(Montant_HT ; 22 000 €) * Taux</code><br />
+                        <code>Taux = 0,70 (très modeste) | 0,50 (modeste)</code>
+                        <p className="font-semibold text-blue-800 mt-2">Plafonds ressources (&gt;5 pers) :</p>
                         <code>Seuil_Max = Plafond_5_pers + ((Taille_Foyer - 5) * Majoration_par_pers)</code>
-                        <p className="font-semibold text-blue-800 mt-2">Calcul Reste à Charge (RAC) :</p>
-                        <code>RAC = Devis_TTC - (Aide_MPA + Aide_Retraite + Crédit_Impôt + APA)</code>
+                        <p className="font-semibold text-blue-800 mt-2">Reste à charge (RAC) :</p>
+                        <code>RAC = Devis_TTC - (Aide_MPA + Aide_Retraite + APA + PCH)</code>
+                        <p className="text-[11px] text-stone-500 mt-1">Crédit d'impôt 25% supprimé pour les dépenses payées depuis le 01/01/2026.</p>
                       </div>
                     </div>
 
@@ -342,7 +346,7 @@ export default function App() {
                         <code>IF Motif == 'Non-Conformité' AND Ressaut &lt; 2cm THEN</code><br />
                         <code className="ml-4">Strategie = 'Erreur Matérielle (Recours)'</code><br />
                         <code>ELSE IF Motif == 'Ressources' THEN</code><br />
-                        <code className="ml-4">Strategie = 'Calcul Crédit Impôt (Basculement)'</code>
+                        <code className="ml-4">Strategie = 'Bascule PCH/Caisse Retraite'</code>
                       </div>
                     </div>
 
@@ -479,15 +483,15 @@ export default function App() {
                     {/* Case Study 7 */}
                     <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
                       <div className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full mb-4 uppercase tracking-wide">Prix Net Douche</div>
-                      <h4 className="font-bold text-stone-900 mb-3 text-lg">Cas #7 : Paul, 1300€ de reste à charge</h4>
+                      <h4 className="font-bold text-stone-900 mb-3 text-lg">Cas #7 : Paul, 1 480€ de reste à charge</h4>
                       <div className="space-y-2 text-sm text-stone-600">
-                        <p><strong className="text-stone-900">Profil :</strong> Revenus modestes (Jaune), Projet de 7 600€.</p>
-                        <p><strong className="text-stone-900">Application :</strong> MaPrimeAdapt (50%) + Crédit Impôt (25% du RAC).</p>
+                        <p><strong className="text-stone-900">Profil :</strong> Revenus très modestes (Bleu), Projet de 7 600€ HT.</p>
+                        <p><strong className="text-stone-900">Application :</strong> MaPrimeAdapt' (70%) + aide caisse de retraite.</p>
                         <div className="pt-2 border-t border-stone-100 mt-2">
                           <strong className="text-blue-700 uppercase text-xs">Bilan :</strong>
                           <div className="bg-stone-50 p-2 rounded mt-1 font-mono text-xs text-stone-700">
-                            <code>Aide MPA = 3 800€ | Crédit Impôt = 850€</code><br />
-                            <code>Reste à Charge Final = 1 300€ (Payé en 10x)</code>
+                            <code>Aide MPA = 5 320€ | Caisse retraite = 800€</code><br />
+                            <code>Reste à Charge Final = 1 480€ (Payé en 10x)</code>
                           </div>
                         </div>
                       </div>
@@ -643,7 +647,7 @@ export default function App() {
                   </div>
                   <div className="border-b border-stone-100 pb-6">
                     <h3 className="text-xl font-semibold text-stone-900 mb-2">Le Crédit d'impôt accessibilité existe-t-il toujours ?</h3>
-                    <p className="text-stone-600">Le crédit d'impôt de 25% reste mobilisable sous conditions spécifiques en 2026 (notamment pour les revenus intermédiaires ou supérieurs non éligibles à MaPrimeAdapt'). Notre simulateur le prend en compte dans son calcul de reste à charge.</p>
+                    <p className="text-stone-600">Non. Le crédit d'impôt de 25% pour l'adaptation du logement à la perte d'autonomie (article 200 quater A du CGI) est supprimé pour les dépenses payées à compter du 1er janvier 2026 ; il n'est mobilisable que pour des dépenses acquittées jusqu'au 31 décembre 2025. Pour un projet en 2026, appuyez-vous sur MaPrimeAdapt', la PCH (si handicap), les aides des caisses de retraite et des collectivités.</p>
                   </div>
                   <div className="border-b border-stone-100 pb-6">
                     <h3 className="text-xl font-semibold text-stone-900 mb-2">Comment choisissez-vous la douche "Idéale" ?</h3>
@@ -664,6 +668,26 @@ export default function App() {
                 </div>
               </section>
 
+              {/* Guides prix & aides par type de travaux */}
+              <section id="guides-travaux" className="mt-16 max-w-6xl mx-auto">
+                <h2 className="text-3xl font-bold text-stone-900 mb-4 text-center">Prix et aides par type de travaux</h2>
+                <p className="text-center text-stone-600 mb-12">Fourchettes de prix 2026, aides mobilisables et reste à charge estimé, travaux par travaux.</p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <a href="/douche-senior/" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 className="text-xl font-bold text-stone-900 mb-2">Douche senior</h3>
+                    <p className="text-stone-600 text-sm">Remplacer une baignoire par une douche de plain-pied : prix 2 500–7 000 €, aides et délais.</p>
+                  </a>
+                  <a href="/douche-pmr/" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 className="text-xl font-bold text-stone-900 mb-2">Douche PMR</h3>
+                    <p className="text-stone-600 text-sm">Normes NF P99-611, dimensions, prix 3 000–8 000 € et aides MaPrimeAdapt’.</p>
+                  </a>
+                  <a href="/salle-de-bain-pmr/" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 className="text-xl font-bold text-stone-900 mb-2">Salle de bain PMR</h3>
+                    <p className="text-stone-600 text-sm">Rénovation complète aux normes : prix 5 000–15 000 €, aides et reste à charge.</p>
+                  </a>
+                </div>
+              </section>
+
               {/* Blog Section */}
               <section id="blog" className="mt-16 max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-stone-900 mb-4 text-center">📚 Blog & Guides Complets</h2>
@@ -671,7 +695,7 @@ export default function App() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {/* Article 1 */}
-                  <a href="/blog/simulateur-maprimeadapt-2026-guide-complet.html" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <a href="/blog/conditions-ressources-maprimeadapt.html" className="block bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div className="text-2xl mb-3">1️⃣</div>
                     <h3 className="text-xl font-bold text-stone-900 mb-2">Simulateur MaPrimeAdapt' 2026</h3>
                     <p className="text-stone-600 text-sm mb-4">Guide complet pour calculer vos aides financières avec les barèmes ANAH 2026. Exemples concrets et reste à charge détaillé.</p>
@@ -943,11 +967,10 @@ export default function App() {
                 Le 1er hub de simulateurs d'adaptation du domicile pour garantir sécurité et autonomie.
               </p>
               <div className="text-sm bg-stone-900/50 p-4 rounded-xl border border-stone-800 text-stone-300">
-                <strong className="text-white">Simulateur MaPrimeAdapt France SAS</strong><br />
-                15 rue de la Sécurité, 75001 Paris<br />
-                <a href="mailto:contact@simulateur-maprimeadapt-simulateurs.fr" className="hover:text-white transition-colors">contact@simulateur-maprimeadapt-simulateurs.fr</a><br />
-                Numéro Vert: <strong className="text-white">0 800 80 80 80</strong><br />
-                <span className="text-xs text-stone-600 mt-2 block">SIRET: 123 456 789 00012</span>
+                <strong className="text-white">Gesmine-Invest Limited</strong><br />
+                Hardy House, 269 Poynders Gardens, London, SW4 8PQ, Royaume-Uni<br />
+                UK Company No. 14120136<br />
+                <a href="mailto:contact@simulateur-maprimeadapt.fr" className="hover:text-white transition-colors">contact@simulateur-maprimeadapt.fr</a>
               </div>
             </div>
 
@@ -968,6 +991,9 @@ export default function App() {
               <ul className="space-y-3 text-sm">
                 <li><a href="#simulateurs" className="hover:text-blue-400 transition-colors">Nos 6 Simulateurs</a></li>
                 <li><a href="/blog/" className="hover:text-blue-400 transition-colors">Blog & Guides Conseils</a></li>
+                <li><a href="/douche-senior/" className="hover:text-blue-400 transition-colors">Douche senior : prix & aides</a></li>
+                <li><a href="/douche-pmr/" className="hover:text-blue-400 transition-colors">Douche PMR : normes & prix</a></li>
+                <li><a href="/salle-de-bain-pmr/" className="hover:text-blue-400 transition-colors">Salle de bain PMR</a></li>
                 <li><a href="#faq" className="hover:text-blue-400 transition-colors">Foire Aux Questions (FAQ)</a></li>
                 <li><a href="#a-propos" className="hover:text-blue-400 transition-colors">Notre Équipe / À Propos</a></li>
               </ul>
@@ -1006,11 +1032,11 @@ export default function App() {
               <div className="space-y-6 text-sm text-stone-600">
                 <div>
                   <h3 className="font-bold text-stone-800 mb-2">1. Éditeur du site</h3>
-                  <p><strong>Simulateur MaPrimeAdapt France SAS</strong><br />15 rue de la Sécurité, 75001 Paris<br />Capital social : 10 000€<br />RSC : Paris B 123 456 789<br />Directeur de publication : Équipe Simulateur MaPrimeAdapt</p>
+                  <p><strong>Gesmine-Invest Limited</strong><br />Société de droit anglais (Private Limited Company)<br />UK Company No. 14120136<br />Siège social : Hardy House, 269 Poynders Gardens, London, SW4 8PQ, Royaume-Uni<br />Contact : contact@simulateur-maprimeadapt.fr<br />Directeur de la publication : le représentant légal de Gesmine-Invest Limited</p>
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-800 mb-2">2. Hébergement</h3>
-                  <p><strong>Vercel Inc.</strong><br />340 S Lemon Ave #4133<br />Walnut, CA 91789, États-Unis</p>
+                  <p><strong>Contabo GmbH</strong><br />Aschauer Straße 32a<br />81549 München, Allemagne<br />Tél. : +49 89 356471770</p>
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-800 mb-2">3. Propriété Intellectuelle</h3>

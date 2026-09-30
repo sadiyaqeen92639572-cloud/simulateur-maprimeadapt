@@ -18,7 +18,7 @@ Le véritable secret du prix d'une douche réside dans le dispositif **MaPrimeAd
 -   **Pour les revenus "Très Modestes"** : L'aide couvre **70% du montant HT**. Une douche à 7 000 € HT vous revient ainsi à **2 100 €** plus la TVA.
 -   **Pour les revenus "Modestes"** : L'aide couvre **50% du montant HT**, soit un reste à charge de **3 500 €**.
 
-> **Note d'expert** : Ces calculs ne prennent pas encore en compte les aides des caisses de retraite et le crédit d'impôt de 25% qui peut s'appliquer sur la part restante !
+> **Note d'expert** : Ces calculs ne prennent pas encore en compte les aides des caisses de retraite (CARSAT/MSA) ni la PCH, qui peuvent réduire encore la part restante. Le crédit d'impôt de 25% pour l'adaptation du logement est en revanche supprimé pour les dépenses payées depuis le 1er janvier 2026.
 
 ### Tableau comparatif des coûts (Exemple 2026)
 
@@ -26,7 +26,7 @@ Le véritable secret du prix d'une douche réside dans le dispositif **MaPrimeAd
 | :--- | :--- | :--- | :--- |
 | **Très Modeste** | 7 500 € | 5 250 € | **1 125 €** |
 | **Modeste** | 7 500 € | 3 750 € | **2 625 €** |
-| **Intermédiaire** | 7 500 € | Crédit Impôt | **5 625 €** |
+| **Non éligible MaPrimeAdapt'** | 7 500 € | Aucune aide nationale | **7 500 €** |
 
 ## Les 3 pièges à éviter pour ne pas surpayer
 

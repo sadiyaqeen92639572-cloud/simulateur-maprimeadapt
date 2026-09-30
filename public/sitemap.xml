@@ -2,79 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://simulateur-maprimeadapt.fr/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://simulateur-maprimeadapt.fr/douche-pmr/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://simulateur-maprimeadapt.fr/douche-senior/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://simulateur-maprimeadapt.fr/salle-de-bain-pmr/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://simulateur-maprimeadapt.fr/monte-escalier-prix/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/accompagnement-administratif-maprimeadapt.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/configurateur-douche-pmr-ideal.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/cumul-aides-2026.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/diagnostic-securite-salle-de-bain-algorithme.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://simulateur-maprimeadapt.fr/blog/ile-de-france-vs-province-maprimeadapt.html</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/maintien-domicile-eviter-ehpad.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/normes-techniques-pmr-fauteuil-roulant.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/prevention-chutes-bilan-salle-de-bain.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/prix-douche-senior-apres-aides.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/refus-maprimeadapt-recours-solutions.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://simulateur-maprimeadapt.fr/blog/simulateur-maprimeadapt-2026-guide-complet.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <loc>https://simulateur-maprimeadapt.fr/blog/conditions-ressources-maprimeadapt.html</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://simulateur-maprimeadapt.fr/blog/timing-travaux-senior-2026.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

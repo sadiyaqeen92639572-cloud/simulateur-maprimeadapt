@@ -7,11 +7,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const blogDir = path.resolve(__dirname, '../public/blog');
+const servicesDir = path.resolve(__dirname, '../content/services');
 const distDir = path.resolve(__dirname, '../dist');
 const baseUrl = 'https://simulateur-maprimeadapt.fr';
 
 function generateSitemap() {
     const blogFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.html') && f !== 'index.html');
+    const serviceSlugs = fs.existsSync(servicesDir)
+        ? fs.readdirSync(servicesDir).filter(f => f.endsWith('.md')).map(f => f.replace('.md', ''))
+        : [];
     const date = new Date().toISOString().split('T')[0];
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -28,6 +32,16 @@ function generateSitemap() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`;
+
+    for (const slug of serviceSlugs) {
+        sitemap += `
+  <url>
+    <loc>${baseUrl}/${slug}/</loc>
+    <lastmod>${date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>`;
+    }
 
     for (const file of blogFiles) {
         const slug = file.replace('.html', '');

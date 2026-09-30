@@ -1,33 +1,42 @@
-# Dimensions PMR : Les normes strictes pour le passage d'un fauteuil
+# Normes PMR salle de bain : ce qui s'applique en rénovation avec MaPrimeAdapt'
 
-Adapter une salle de bain pour un senior en fauteuil roulant ne s'improvise pas. En 2026, les normes techniques sont devenues particulièrement exigeantes pour garantir une sécurité totale et, surtout, pour débloquer les aides financières comme MaPrimeAdapt'. Voici les mesures à respecter absolument.
+Adapter une salle de bain pour un senior ou une personne en fauteuil roulant ne s'improvise pas. Les « normes PMR » sont d'abord écrites pour le neuf et les établissements recevant du public : en rénovation d'un logement existant, elles servent surtout de repères, et c'est le diagnostic de votre accompagnateur (AMO) qui fixe le plan de travaux financé par MaPrimeAdapt'.
 
-## Le cercle de giration : La règle d'or
+## Neuf ou rénovation : ce qui est obligatoire
 
-L'élément le plus critique est l'espace de manœuvre. Un utilisateur en fauteuil doit pouvoir faire un demi-tour complet (360°) sans obstacle.
-- **Le diamètre requis** : Un cercle libre de tout obstacle de **150 cm de diamètre** est obligatoire devant la douche et devant les toilettes.
-- **Astuce d'expert** : Une partie de ce cercle peut "mordre" sous un lavabo suspendu s'il n'y a pas de meuble dessous, ce qui permet de gagner de la place dans les petites salles de bain.
+L'arrêté du 11 septembre 2020 impose un accès à la douche **sans ressaut** dans les logements individuels neufs depuis le 1er janvier 2021. Pour un logement existant, il n'y a pas de mise aux normes automatique : les cotes ci-dessous sont des références de conception. Faites valider votre projet par l'accompagnateur avant de signer un devis.
 
-## La douche PMR : Des centimètres de sécurité
+## Le cercle de giration : la référence pour manœuvrer
 
-Oubliez les douches classiques, une douche accessible en fauteuil roulant répond à des cotes précises :
-1.  **Le Receveur** : Il doit mesurer au minimum **120 x 90 cm** pour permettre à l'utilisateur de se doucher avec l'éventuelle aide d'un aidant.
-2.  **Le Ressaut (Marche)** : C'est le point de blocage n°1 des dossiers d'aides. Le ressaut doit être de **2 cm maximum**. Si le seuil est biseauté, le franchissement est facilité.
-3.  **L'accès** : La largeur de passage utile doit être de **90 cm** au minimum (porte ou espace libre).
+L'espace de manœuvre est l'élément le plus critique. Un utilisateur en fauteuil doit pouvoir faire demi-tour sans obstacle.
+- **Diamètre de référence** : un cercle libre de **150 cm** devant la douche et devant les toilettes.
+- **Astuce** : une partie de ce cercle peut passer sous un lavabo suspendu s'il n'y a pas de meuble dessous, ce qui fait gagner de la place dans les petites salles de bain.
 
-## Accessoires : Hauteurs et Emplacements
+## La douche PMR : des cotes précises
 
--   **Le Siège de Douche** : Il doit être installé à une hauteur comprise entre **45 et 50 cm**. Il doit impérativement être muni de barres d'appui latérales à la même hauteur.
--   **Les Barres d'Appui** : Elles ne sont pas "décoratives". Une barre de maintien horizontale à **70-80 cm** du sol est indispensable pour le transfert du fauteuil au siège.
--   **La Robinetterie** : Elle doit être située dans une zone accessible entre **90 et 130 cm** de hauteur pour être manipulée sans effort depuis une position assise.
+1.  **Le receveur** : au minimum **120 x 90 cm**, pour se doucher avec l'aide éventuelle d'un aidant.
+2.  **Le ressaut** : **2 cm maximum**, idéalement biseauté. C'est le point de blocage le plus fréquent.
+3.  **Le passage** : une porte de 90 cm, soit un passage utile d'environ 77 cm minimum pour un fauteuil.
 
-> **Attention** : En 2026, le non-respect d'une seule de ces cotes peut entraîner le remboursement total des subventions perçues après un contrôle post-travaux.
+## Accessoires : hauteurs usuelles
+
+Ces repères sont couramment retenus par les professionnels ; faites-les confirmer par l'ergothérapeute selon votre morphologie.
+-   **Siège de douche** : entre 45 et 50 cm de hauteur, avec des barres d'appui latérales.
+-   **Barres d'appui** : une barre horizontale à 70-80 cm du sol aide le transfert du fauteuil au siège.
+-   **Robinetterie** : entre 90 et 130 cm de hauteur pour la manipuler depuis une position assise.
+
+## Financer la mise en conformité
+
+Une douche accessible, des WC surélevés ou des barres d'appui font partie des travaux finançables par MaPrimeAdapt' (70 % ou 50 % dans la limite de 22 000 € HT). Consultez les [conditions et plafonds de ressources](/blog/conditions-ressources-maprimeadapt.html) et notre guide du [prix d'une douche senior après aides](/blog/prix-douche-senior-apres-aides.html).
+
+## Sources et limites
+L'exigence de douche sans ressaut dans le neuf provient de l'arrêté du 11 septembre 2020 (consultable sur Légifrance). Les autres cotes sont des repères issus de guides professionnels d'aménagement : elles ne constituent pas une obligation pour votre logement existant. Sur un chantier financé, le plan validé par l'accompagnateur prime.
 
 ## Faire valider son projet par un simulateur technique
-Avant de signer un devis, utilisez un simulateur de normes. Il vous permettra de vérifier visuellement si votre future douche sera réellement utilisable et conforme aux attentes de l'Anah.
+Avant de signer un devis, utilisez un simulateur de normes pour vérifier visuellement si votre future douche sera utilisable dans votre pièce.
 
-**Tags** : `Normes PMR` | `Technique` | `Fauteuil Roulant` | `Accessibilité`
-**Date de publication** : 31 Mars 2026
-**Version** : 1.1
+**Tags** : `Normes PMR` | `Salle de bain` | `Fauteuil Roulant` | `Accessibilité`
+**Date de publication** : 30 Septembre 2026
+**Version** : 2.0
 
-**Takeaway** : "Le respect des normes PMR 2026 (120x90cm min, giration 1.50m) est indispensable pour obtenir la validation de vos dossiers de subvention Anah."
+**Takeaway** : "Les normes PMR (douche 120 x 90 cm, giration de 1,50 m, ressaut de 2 cm) sont des repères de conception : en rénovation, votre AMO valide le plan financé par MaPrimeAdapt'."

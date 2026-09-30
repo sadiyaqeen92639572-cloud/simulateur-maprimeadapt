@@ -9,7 +9,7 @@ Pour financer l'adaptation de votre salle de bain, vous pouvez mobiliser jusqu'�
 1.  **MaPrimeAdapt' (Le Socle Central)** : Gérée par l'Anah, c'est l'aide principale. Elle finance **50% ou 70%** de vos travaux HT selon vos ressources, dans la limite d'un plafond de travaux de 22 000 €.
 2.  **L'APA (Allocation Personnalisée d'Autonomie)** : Destinée aux seniors en perte d'autonomie (GIR 1 à 4). Contrairement aux idées reçues, l'APA peut tout à fait venir en complément de MaPrimeAdapt' pour financer la part non couverte par l'Anah.
 3.  **Les Caisses de Retraite (CARSAT, Agirc-Arrco)** : Ces organismes proposent des aides forfaitaires (souvent entre 500 € et 1 500 €) dans le cadre de la prévention de la perte d'autonomie. 
-4.  **Le Crédit d'Impôt Accessibilité (25%)** : Si une partie de vos travaux n'est pas subventionnée, vous pouvez encore déclarer ces dépenses pour bénéficier d'un crédit d'impôt sur le matériel spécifique (si vous respectez les critères d'autonomie).
+4.  **La PCH aménagement du logement** : pour les personnes en situation de handicap (via la MDPH), jusqu'à 10 000 € sur 10 ans, cumulable avec MaPrimeAdapt' sur le reste à charge. *(Le crédit d'impôt de 25% pour l'adaptation du logement est supprimé pour les dépenses payées depuis le 1er janvier 2026.)*
 
 ## Pourquoi le calcul du cumul est-il si complexe ?
 
